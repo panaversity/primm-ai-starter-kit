@@ -144,8 +144,3 @@ PRIMM was created by Sue Sentance and Jane Waite (2017) and tested with 493 stud
 - [PRIMM Portal](https://primmportal.com)
 - [Computing Education Research](https://computingeducationresearch.org/projects/primm/)
 
----
-
-## License
-
-MIT

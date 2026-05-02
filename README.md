@@ -1,8 +1,42 @@
 # PRIMM-AI+ Starter Kit
 
-A workbench configuration for learning Python with **Claude Code** using the **PRIMM-AI+** framework (Predict, Run, Investigate, Modify, Make + AI).
+> **Read code before you write it. Predict before you run. Think before you ask AI.**
+>
+> A research-validated workbench that turns Claude Code into your structured learning partner for Python.
 
-Part of [The AI Agent Factory](https://github.com/panaversity/agentfactory) book, Part 4: Programming in the AI Era.
+<p align="center">
+  <img src="https://img.shields.io/badge/Framework-PRIMM--AI%2B-blue" alt="PRIMM-AI+">
+  <img src="https://img.shields.io/badge/Tool-Claude%20Code-orange?logo=anthropic" alt="Claude Code">
+  <img src="https://img.shields.io/badge/Language-Python-3776AB?logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/Research-493%20Students%20%C2%B7%2013%20Schools-green" alt="Research Validated">
+  <img src="https://img.shields.io/badge/Commands-7%20Slash%20Commands-purple" alt="7 Slash Commands">
+  <img src="https://img.shields.io/badge/Status-Active-success" alt="Status: Active">
+</p>
+
+<p align="center">
+  <strong>Install once in Chapter 42. Use across all 29 chapters of Part 4.</strong>
+</p>
+
+<p align="center">
+  Part of <a href="https://github.com/panaversity/agentfactory">The AI Agent Factory</a> book &middot; Part 4: Programming in the AI Era
+</p>
+
+---
+
+### How It Works
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                   PRIMM-AI+ Cycle                       │
+│                                                         │
+│   Predict ──► Run ──► Investigate ──► Modify ──► Make   │
+│     (AI)      (You)      (AI)         (You)      (You)  │
+│                                                         │
+│   Layer 1: Plan Mode ········ blocks file edits         │
+│   Layer 2: CLAUDE.md ········ blocks answer-revealing   │
+│   Layer 3: Slash Commands ··· guides each stage         │
+└─────────────────────────────────────────────────────────┘
+```
 
 ---
 

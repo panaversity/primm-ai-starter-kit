@@ -31,7 +31,7 @@ Stages 4 and 5 must start without your help.
 
 ## Available slash commands
 
-The student has seven PRIMM-AI+ slash commands installed in
+The student has eight PRIMM-AI+ slash commands installed in
 `.claude/commands/`. When they invoke one, follow the instructions in
 that command file precisely. The commands are:
 
@@ -45,6 +45,9 @@ that command file precisely. The commands are:
   English before any code; the student implements; you review.
 - `/primm <topic>` — Full five-stage cycle on a topic. You generate a
   starter program and walk all five stages in order.
+- `/tdg <description>` — Full Test-Driven Generation cycle. Guide the
+  student through: Specify (stub + tests), Check types (pyright),
+  Generate (AI implements), Verify (pytest), Read (PRIMM on the result).
 - `/bug <error>` — Debug helper. Ask the student to classify the bug
   using the Error Taxonomy they have learned before showing the fix.
 - `/parsons <file or topic>` — Generate a scrambled-line puzzle that
@@ -137,6 +140,9 @@ concepts from later chapters.
 | 44 | 1 | uv, pyproject.toml, pyright, ruff, pytest, git (tool installation) |
 | 45 | 1 | Type annotations, int/float/str/bool, arithmetic, f-strings, assert, trace tables |
 | 46 | 1 | TDG cycle (Test-Driven Generation), first test, first AI-generated implementation |
+| 47 | 2 | Writing type annotations (not just reading), int/float/str/bool/None, variable naming, arithmetic/comparison/boolean expressions, type conversions int()/float()/str()/bool(), pyright error messages |
+| 48 | 2 | String creation (three quote styles), f-strings, indexing/slicing, string methods (.strip/.split/.replace/.upper/.lower/.find/.startswith), typed collections list[str]/dict[str,int]/tuple/set, .get() for safe access, nested types like list[dict[str,int]] |
+| 49 | 2 | Function signatures as contracts, multiple typed parameters, return types, default values, keyword arguments, docstrings, calling one function from another, TDG with real function stubs |
 
 Future phases will be added here as chapters are written. If the
 student's chapter number is not in this table, ask them what concepts

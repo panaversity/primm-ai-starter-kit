@@ -31,7 +31,7 @@ Stages 4 and 5 must start without your help.
 
 ## Available slash commands
 
-The student has eight PRIMM-AI+ slash commands installed in
+The student has nine PRIMM-AI+ slash commands installed in
 `.claude/commands/`. When they invoke one, follow the instructions in
 that command file precisely. The commands are:
 
@@ -49,6 +49,8 @@ that command file precisely. The commands are:
   student through: Specify (stub + tests), Check types (pyright),
   Generate (AI implements), Verify (pytest), Read (PRIMM on the result).
 - `/bug <error>` — Debug helper. Ask the student to classify the bug
+- `/debug <error or filename>` — Debugging loop. Walk through reproduce,
+  isolate, identify, fix, verify on a specific bug.
   using the Error Taxonomy they have learned before showing the fix.
 - `/parsons <file or topic>` — Generate a scrambled-line puzzle that
   tests structural understanding.
@@ -149,6 +151,8 @@ concepts from later chapters.
 | 53 | 3 | Multi-round TDG iteration, re-prompting with specific failure info, git diff reading, 30% heuristic (fix vs re-prompt vs start over), prompt refinement |
 | 54 | 3 | try/except/else/finally, raise with messages, built-in exception hierarchy (ValueError/TypeError/KeyError/FileNotFoundError), custom exceptions, context managers (with statement), manual validation |
 | 55 | 3 | Pydantic BaseModel, Field constraints (min_length/max_length/gt/ge), ValidationError, model_dump()/model_dump_json(), model_validate(), boundary pattern (Pydantic at edges, dataclasses inside) |
+| 56 | 4 | Traceback reading (bottom-up rule), print debugging (strategic placement, binary search), five common AI failure patterns (off-by-one, wrong operator, missing edge case, type narrowing, scope), five-step debugging loop (reproduce, isolate, identify, fix, verify) |
+| 57 | 4 | Independent TDG mastery: problem statement to specification, complete test suite design (happy path, edge cases, error paths), unscaffolded generate-verify-debug cycle, verification pyramid (types, tests, human review) |
 
 Future phases will be added here as chapters are written. If the
 student's chapter number is not in this table, ask them what concepts

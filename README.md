@@ -9,8 +9,8 @@
   <img src="https://img.shields.io/badge/Tool-Claude%20Code-orange?logo=anthropic" alt="Claude Code">
   <img src="https://img.shields.io/badge/Language-Python-3776AB?logo=python" alt="Python">
   <img src="https://img.shields.io/badge/Research-493%20Students%20%C2%B7%2013%20Schools-green" alt="Research Validated">
-  <img src="https://img.shields.io/badge/Commands-9%20Slash%20Commands-purple" alt="8 Slash Commands">
-  <img src="https://img.shields.io/badge/Version-4.0-blueviolet" alt="v2.0">
+  <img src="https://img.shields.io/badge/Commands-8%20Slash%20Commands-purple" alt="8 Slash Commands">
+  <img src="https://img.shields.io/badge/Version-3.0-blueviolet" alt="v2.0">
   <img src="https://img.shields.io/badge/Status-Active-success" alt="Status: Active">
 </p>
 
@@ -93,7 +93,7 @@ Check that Claude Code loaded the house rules:
 What rules are you following for this session?
 ```
 
-It should describe PRIMM-AI+ and the three rules. Then type `/` to confirm the nine slash commands appear.
+It should describe PRIMM-AI+ and the three rules. Then type `/` to confirm the eight slash commands appear.
 
 ---
 
@@ -107,7 +107,6 @@ It should describe PRIMM-AI+ and the three rules. Then type `/` to confirm the n
 | `/make <description>` | Make | Demands a written spec in plain English before any code |
 | `/primm <topic>` | All five | Runs a complete Predict-Run-Investigate-Modify-Make cycle on any topic |
 | `/tdg <description>` | TDG cycle | Guides you through: Specify (stub + tests) → Check types (pyright) → Generate (AI) → Verify (pytest) → Read (PRIMM) |
-| `/debug <error>` | Debug | Guides you through the five-step debugging loop: reproduce, isolate, identify, fix, verify |
 | `/bug <error>` | Debug | Asks you to classify the bug type before showing the fix |
 | `/parsons <file or topic>` | Practice | Generates a scrambled-line puzzle to test structural understanding |
 
@@ -147,8 +146,6 @@ At the start of each session, Claude Code asks which chapter you are working on.
 | 53 | 3 | Multi-round TDG iteration, re-prompting, git diff, 30% heuristic |
 | 54 | 3 | try/except/else/finally, raise, exception hierarchy, context managers, manual validation |
 | 55 | 3 | Pydantic BaseModel, Field constraints, ValidationError, model_dump, boundary pattern |
-| 56 | 4 | Traceback reading, print debugging, AI failure patterns, five-step debugging loop |
-| 57 | 4 | Independent TDG mastery, problem to spec, test suite design, verification pyramid |
 
 The concept map grows as new chapters are written. If your chapter is not in the table, Claude Code will ask what concepts you have covered.
 
@@ -168,7 +165,6 @@ primm-ai-starter-kit/
         ├── make.md              # Spec-first, then implement
         ├── primm.md             # Full five-stage cycle
         ├── tdg.md               # Full TDG cycle (v2.0)
-        ├── debug.md               # Five-step debugging loop (v4.0)
         ├── bug.md               # Classify-before-fix
         └── parsons.md           # Scrambled-line puzzles
 ```
@@ -176,14 +172,6 @@ primm-ai-starter-kit/
 ---
 
 ## Version History
-
-### v4.0 (Phase 4, Ch 56-57)
-
-| Change | Details |
-|---|---|
-| New command: `/debug` | Guides student through the five-step debugging loop: reproduce, isolate, identify, fix, verify. Different from `/bug` which only classifies errors (step 3). |
-| Concept map extended | Added Ch 56 (debugging AI-generated code) and Ch 57 (TDG mastery) |
-| Command count | 8 → 9 |
 
 ### v3.0 (Phase 3, Ch 50-55)
 
@@ -211,7 +199,6 @@ primm-ai-starter-kit/
 **Why an override clause?** Learning frameworks should build habits, not become obstacles. When you know a concept and want to move fast, saying "skip the scaffolding" is enough.
 
 **Why `/tdg` as a separate command?** The TDG loop (Specify → Check → Generate → Verify → Read) is different from the PRIMM cycle (Predict → Run → Investigate → Modify → Make). PRIMM is for reading existing code. TDG is for building new code from specifications. Both use the same verification instinct, but the workflow is different.
-**Why `/debug` is different from `/bug`?** `/bug` asks you to classify an error (step 3 of the debugging loop). `/debug` guides you through ALL five steps: reproduce with a failing test, isolate by simplifying input, identify (classify), fix the minimal change, and verify with the full test suite. Use `/bug` for quick classification. Use `/debug` when you need the full systematic process.
 
 ---
 

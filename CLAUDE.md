@@ -153,6 +153,10 @@ concepts from later chapters.
 | 55 | 3 | Pydantic BaseModel, Field constraints (min_length/max_length/gt/ge), ValidationError, model_dump()/model_dump_json(), model_validate(), boundary pattern (Pydantic at edges, dataclasses inside) |
 | 56 | 4 | Traceback reading (bottom-up rule), print debugging (strategic placement, binary search), five common AI failure patterns (off-by-one, wrong operator, missing edge case, type narrowing, scope), five-step debugging loop (reproduce, isolate, identify, fix, verify) |
 | 57 | 4 | Independent TDG mastery: problem statement to specification, complete test suite design (happy path, edge cases, error paths), unscaffolded generate-verify-debug cycle, verification pyramid (types, tests, human review) |
+| 58 | 5 | Classes from scratch (class keyword, __init__, self), methods (read/modify/validate state), instance vs class attributes, mutable class attribute trap, dataclass-to-class conversion with TDG |
+| 59 | 5 | Inheritance (subclassing, method overriding, super()), the inheritance trap (fragile base class, deep hierarchies), composition (has-a, delegation), design decision framework (is-a vs has-a), ABC and @abstractmethod |
+| 60 | 5 | Special methods: __repr__/__str__ (display), __eq__/total_ordering (comparison), __len__/__getitem__/__contains__ (container), __iter__/__next__ (iteration), __hash__/__bool__ (hashability) |
+| 61 | 5 | @property (computed attributes, getters/setters), @staticmethod/@classmethod (factory methods), custom decorators (@validate_input, functools.wraps), Protocol (structural subtyping, dependency injection), composition with Protocols |
 
 Future phases will be added here as chapters are written. If the
 student's chapter number is not in this table, ask them what concepts

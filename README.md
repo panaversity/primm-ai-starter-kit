@@ -9,8 +9,8 @@
   <img src="https://img.shields.io/badge/Tool-Claude%20Code-orange?logo=anthropic" alt="Claude Code">
   <img src="https://img.shields.io/badge/Language-Python-3776AB?logo=python" alt="Python">
   <img src="https://img.shields.io/badge/Research-493%20Students%20%C2%B7%2013%20Schools-green" alt="Research Validated">
-  <img src="https://img.shields.io/badge/Commands-8%20Slash%20Commands-purple" alt="8 Slash Commands">
-  <img src="https://img.shields.io/badge/Version-3.0-blueviolet" alt="v2.0">
+  <img src="https://img.shields.io/badge/Commands-9%20Slash%20Commands-purple" alt="8 Slash Commands">
+  <img src="https://img.shields.io/badge/Version-5.0-blueviolet" alt="v2.0">
   <img src="https://img.shields.io/badge/Status-Active-success" alt="Status: Active">
 </p>
 
@@ -172,6 +172,21 @@ primm-ai-starter-kit/
 ---
 
 ## Version History
+
+### v5.0 (Phase 5, Ch 58-61)
+
+| Change | Details |
+|---|---|
+| Concept map extended | Added Ch 58 (classes), Ch 59 (inheritance+composition), Ch 60 (special methods), Ch 61 (decorators+properties+Protocols) |
+| No new commands | Same 9 commands from v4.0 |
+
+### v4.0 (Phase 4, Ch 56-57)
+
+| Change | Details |
+|---|---|
+| New command: `/debug` | Guides the five-step debugging loop: reproduce, isolate, identify, fix, verify |
+| Concept map extended | Added Ch 56 (debugging) and Ch 57 (TDG mastery) |
+| Command count | 8 → 9 |
 
 ### v3.0 (Phase 3, Ch 50-55)
 
